@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b12">
+  <meta name="description" content="Tushar Shende — AI & Machine Learning Engineer, software developer, and robotics enthusiast. Explore projects in AI, software, and IoT.">
+  <title>Tushar Shende | AI & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#070b12;--panel:#0c1420;--panel2:#101b29;--line:rgba(156,190,216,.15);--text:#edf5fc;--muted:#99aabc;--cyan:#78e4f5;--blue:#6a98ff;--mono:"DM Mono",monospace;--font:"Manrope",system-ui,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.65;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.24;background-image:linear-gradient(rgba(120,228,245,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(120,228,245,.045) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,#000,transparent 82%);z-index:-2}
+    body:after{content:"";position:fixed;width:560px;height:560px;top:-260px;right:-180px;background:radial-gradient(circle,rgba(49,130,180,.18),transparent 67%);pointer-events:none;z-index:-1}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(7,11,18,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:var(--mono);font-size:14px;letter-spacing:.12em;color:var(--cyan)}.brand span{color:#fff}
+    .links{display:flex;gap:26px;align-items:center;font-size:12px;color:var(--muted)}.links a:hover{color:var(--cyan)}.nav-cta{padding:9px 13px;border:1px solid rgba(120,228,245,.4);border-radius:7px;color:var(--cyan)!important}
+    .hero{min-height:665px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:56px;padding-top:80px;padding-bottom:95px}
+    .eyebrow,.section-label{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan)}.eyebrow{display:flex;align-items:center;gap:11px}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 15px var(--cyan)}
+    h1{font-size:clamp(42px,6vw,78px);line-height:1.03;letter-spacing:-.065em;margin:24px 0 18px;font-weight:800}h1 .accent{color:var(--cyan)}.intro{max-width:570px;color:var(--muted);font-size:16px;line-height:1.9}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 17px;border-radius:8px;font-size:13px;font-weight:700;border:1px solid var(--line);transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-3px);border-color:rgba(120,228,245,.5)}.btn.primary{background:var(--cyan);color:#071019;border-color:var(--cyan)}.btn.secondary{background:rgba(255,255,255,.025)}
+    .meta{display:flex;gap:23px;flex-wrap:wrap;margin-top:36px;color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:.06em}.meta span:before{content:"/ ";color:var(--cyan)}
+    .visual{position:relative;display:grid;place-items:center;min-height:400px}.orbital{width:min(100%,390px);aspect-ratio:1;border-radius:50%;position:relative;display:grid;place-items:center}
+    .orbital:before,.orbital:after{content:"";position:absolute;border-radius:50%;inset:4%;border:1px solid rgba(120,228,245,.2);animation:spin 24s linear infinite}.orbital:after{inset:15%;border-style:dashed;border-color:rgba(106,152,255,.32);animation-direction:reverse;animation-duration:30s}
+    .ring{position:absolute;inset:27%;border-radius:50%;border:1px solid rgba(120,228,245,.42);box-shadow:0 0 40px rgba(78,196,226,.1),inset 0 0 35px rgba(78,196,226,.08)}.ring:before,.ring:after{content:"";position:absolute;border-radius:50%;inset:12%;border:1px solid rgba(120,228,245,.18)}.ring:after{inset:27%;background:radial-gradient(circle,rgba(120,228,245,.24),rgba(106,152,255,.08) 44%,transparent 70%);border:0}
+    .core{position:relative;z-index:2;font-size:39px;font-weight:800;letter-spacing:-.08em;color:#f3fcff;text-shadow:0 0 24px rgba(120,228,245,.5)}.orbit-dot{position:absolute;width:9px;height:9px;background:var(--cyan);border-radius:50%;box-shadow:0 0 20px var(--cyan)}.d1{top:11%;left:30%}.d2{right:8%;top:53%;width:6px;height:6px}.d3{bottom:18%;left:22%;width:5px;height:5px}
+    .hud-tag{position:absolute;background:rgba(9,18,29,.85);border:1px solid var(--line);padding:10px 13px;border-radius:8px;backdrop-filter:blur(12px);font-family:var(--mono);font-size:10px;color:var(--muted);box-shadow:0 12px 45px rgba(0,0,0,.2)}.hud-tag strong{display:block;color:var(--cyan);font-size:11px;font-weight:500}.tag-a{top:12%;right:-1%}.tag-b{bottom:17%;left:-2%}.tag-c{bottom:5%;right:11%}
+    @keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-9px)}}.orbital{animation:float 7s ease-in-out infinite}
+    .section{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:29px}.section h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.045em;line-height:1.2;margin:9px 0 0}.section-desc{font-size:13px;color:var(--muted);max-width:430px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(145deg,rgba(16,27,41,.88),rgba(9,15,24,.85));border:1px solid var(--line);border-radius:12px;padding:22px;min-height:205px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:rgba(120,228,245,.4)}.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.icon{width:39px;height:39px;border-radius:9px;display:grid;place-items:center;background:rgba(120,228,245,.09);color:var(--cyan);font-family:var(--mono);font-size:14px}.arrow{color:var(--muted);font-size:18px}.card h3{margin:0 0 8px;font-size:16px}.card p{font-size:12px;color:var(--muted);margin:0;line-height:1.8}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.tag{font-family:var(--mono);font-size:9px;color:#b2c5d7;border:1px solid var(--line);border-radius:4px;padding:4px 7px}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:16px;border:1px solid var(--line);background:rgba(12,20,32,.65);border-radius:8px}.skill small{display:block;color:var(--cyan);font-family:var(--mono);font-size:10px;margin-bottom:8px}.skill strong{font-size:13px;font-weight:600}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:start}.about-grid p{margin-top:0;color:var(--muted);font-size:14px}.callout{border-left:2px solid var(--cyan);padding:8px 0 8px 18px;color:#dce7f2;font-size:14px}
+    .contact{display:flex;justify-content:space-between;align-items:center;gap:32px;padding:30px;border:1px solid rgba(120,228,245,.22);border-radius:14px;background:radial-gradient(ellipse at 100% 0,rgba(54,133,174,.13),transparent 55%),var(--panel)}.contact h2{margin:10px 0;font-size:30px}.contact p{margin:0;color:var(--muted);font-size:13px;max-width:520px}
+    footer{padding:27px 0 35px;color:var(--muted);font-family:var(--mono);font-size:10px}.footer-in{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px}footer a:hover{color:var(--cyan)}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:20px;padding-top:75px;min-height:auto}.visual{min-height:330px;grid-row:1}.orbital{width:min(77vw,330px)}.hero-copy{grid-row:2}.tag-a{right:0}.tag-b{left:0}.grid{grid-template-columns:repeat(2,1fr)}.skills{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr;gap:20px}.section-head{align-items:start;flex-direction:column}.contact{align-items:start;flex-direction:column}}
+    @media(max-width:520px){.wrap{width:calc(100% - 32px)}.nav{height:62px}.links{gap:13px;font-size:11px}.links a:not(.nav-cta){display:none}.hero{padding-top:35px;padding-bottom:62px}h1{font-size:47px}.intro{font-size:14px}.visual{min-height:285px}.grid{grid-template-columns:1fr}.card{min-height:0}.section{padding:58px 0}.meta{gap:12px}.contact{padding:22px}.footer-in{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">TS<span> / </span>PORTFOLIO</a>
+      <div class="links">
+        <a href="#work">Projects</a><a href="#skills">Skills</a><a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Contact ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> AI · SOFTWARE · ROBOTICS</div>
+        <h1>Building ideas<br>into <span class="accent">reality.</span></h1>
+        <p class="intro">I'm <strong style="color:var(--text)">Tushar Shende</strong>, an AI &amp; Machine Learning engineering student who enjoys building intelligent applications, exploring computer vision, and connecting software with the physical world.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">Explore projects <span>↘</span></a>
+          <a class="btn secondary" href="https://github.com/Tushar-shende2004" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+        </div>
+        <div class="meta"><span>AI &amp; ML</span><span>Python</span><span>Robotics &amp; IoT</span></div>
+      </div>
+      <div class="visual" aria-label="Abstract animated technology-inspired circular design">
+        <div class="orbital">
+          <div class="ring"></div><div class="core">TS<span style="color:var(--cyan)">.</span></div>
+          <i class="orbit-dot d1"></i><i class="orbit-dot d2"></i><i class="orbit-dot d3"></i>
+        </div>
+        <div class="hud-tag tag-a"><strong>01 / THINK</strong>Ideas into systems</div>
+        <div class="hud-tag tag-b"><strong>02 / BUILD</strong>Code meets reality</div>
+        <div class="hud-tag tag-c"><strong>STATUS</strong>Always learning</div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><div class="section-label">01 / Selected directions</div><h2>What I build</h2></div>
+          <p class="section-desc">A few areas I enjoy exploring through hands-on projects and experimentation.</p>
+        </div>
+        <div class="grid">
+          <a class="card reveal" href="https://github.com/Tushar-shende2004" target="_blank" rel="noreferrer">
+            <div class="card-top"><div class="icon">AI</div><span class="arrow">↗</span></div><h3>AI &amp; Voice Applications</h3><p>Exploring voice interaction, intelligent assistants, and automation that makes everyday tasks easier.</p><div class="tags"><span class="tag">Python</span><span class="tag">AI</span><span class="tag">Automation</span></div>
+          </a>
+          <a class="card reveal" href="https://github.com/Tushar-shende2004" target="_blank" rel="noreferrer">
+            <div class="card-top"><div class="icon">CV</div><span class="arrow">↗</span></div><h3>Computer Vision &amp; Robotics</h3><p>Working across software and hardware, with an interest in object tracking and sensor-driven systems.</p><div class="tags"><span class="tag">Computer Vision</span><span class="tag">Robotics</span></div>
+          </a>
+          <a class="card reveal" href="https://github.com/Tushar-shende2004" target="_blank" rel="noreferrer">
+            <div class="card-top"><div class="icon">IoT</div><span class="arrow">↗</span></div><h3>Embedded Systems</h3><p>Building with microcontrollers, sensors, and connected devices to prototype practical ideas.</p><div class="tags"><span class="tag">Arduino</span><span class="tag">ESP32</span><span class="tag">IoT</span></div>
+          </a>
+          <a class="card reveal" href="https://github.com/Tushar-shende2004" target="_blank" rel="noreferrer">
+            <div class="card-top"><div class="icon">EV</div><span class="arrow">↗</span></div><h3>EV Charging Research</h3><p>Research work exploring the concept of smart wireless charging roads for electric vehicles.</p><div class="tags"><span class="tag">Research</span><span class="tag">Electric Vehicles</span></div>
+          </a>
+          <a class="card reveal" href="https://github.com/Tushar-shende2004" target="_blank" rel="noreferrer">
+            <div class="card-top"><div class="icon">&lt;/&gt;</div><span class="arrow">↗</span></div><h3>Web &amp; Software Development</h3><p>Creating useful applications and clean interfaces with a focus on usability and maintainability.</p><div class="tags"><span class="tag">Web</span><span class="tag">Python</span></div>
+          </a>
+          <a class="card reveal" href="https://github.com/Tushar-shende2004?tab=repositories" target="_blank" rel="noreferrer">
+            <div class="card-top"><div class="icon">GH</div><span class="arrow">↗</span></div><h3>Explore all repositories</h3><p>Browse my public repositories for source code, experiments, documentation, and new work.</p><div class="tags"><span class="tag">Open Source</span><span class="tag">GitHub</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="section-label">02 / Toolbox</div><h2>Technologies &amp; interests</h2></div><p class="section-desc">Tools I use or explore as I continue learning and building.</p></div>
+        <div class="skills">
+          <div class="skill reveal"><small>01 — LANGUAGE</small><strong>Python · C++ · Java</strong></div>
+          <div class="skill reveal"><small>02 — AI / ML</small><strong>AI applications · Computer vision</strong></div>
+          <div class="skill reveal"><small>03 — WEB</small><strong>HTML · CSS · JavaScript · Flask</strong></div>
+          <div class="skill reveal"><small>04 — HARDWARE</small><strong>Arduino · ESP32 · Sensors</strong></div>
+          <div class="skill reveal"><small>05 — TOOLS</small><strong>Git · GitHub · VS Code</strong></div>
+          <div class="skill reveal"><small>06 — SYSTEMS</small><strong>APIs · Automation</strong></div>
+          <div class="skill reveal"><small>07 — BUILD</small><strong>Prototyping · Debugging</strong></div>
+          <div class="skill reveal"><small>08 — MINDSET</small><strong>Learn · Test · Improve</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="reveal"><div class="section-label">03 / About me</div><h2>Curious by nature.<br>Builder by practice.</h2></div>
+        <div class="reveal"><p>I'm pursuing a B.Tech in Artificial Intelligence &amp; Machine Learning. I like taking ideas from an initial sketch to a working prototype, learning from what breaks, and improving the result step by step.</p><p>My interests span AI-powered software, robotics, IoT, and practical engineering. I value clear documentation, thoughtful problem-solving, and projects that solve real problems.</p><div class="callout">My approach: stay curious, build thoughtfully, and keep improving.</div></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact reveal">
+          <div><div class="section-label">04 / Get in touch</div><h2>Let's build something useful.</h2><p>Interested in AI, software, robotics, or collaborative projects? Explore my work or connect with me through the links below.</p></div>
+          <div class="actions" style="margin:0;flex-shrink:0"><a class="btn primary" href="https://github.com/Tushar-shende2004" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/tushar-shende-949272378" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-in"><span>© <span id="year"></span> TUSHAR SHENDE</span><span>Designed with clarity &amp; curiosity · <a href="#home">Back to top ↑</a></span></div></footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const items = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(item => observer.observe(item));
+    } else {
+      items.forEach(item => item.classList.add("visible"));
+    }
+  </script>
+</body>
+</html>
